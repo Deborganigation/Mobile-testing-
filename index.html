@@ -83,17 +83,49 @@
             
             <div id="main-view">
                 <div id="admin-dashboard-view" class="view hidden">
-                    <div class="row g-4 mb-4">
-                        <div class="col-lg-3 col-md-6"><div class="stat-card bg-primary" onclick="navigateTo('admin-requirements-view')"><div><h5 class="mb-0">Active Items</h5><p class="display-4" id="stats-active-tenders">--</p></div><i class="fas fa-file-alt stat-icon"></i></div></div>
-                        <div class="col-lg-3 col-md-6"><div class="stat-card bg-success" onclick="navigateTo('admin-pending-users-view')"><div><h5 class="mb-0">Pending Users</h5><p class="display-4" id="stats-pending-users">--</p></div><i class="fas fa-user-check stat-icon"></i></div></div>
-                        <div class="col-lg-3 col-md-6"><div class="stat-card bg-warning" onclick="navigateTo('admin-bidding-history-view')"><div><h5 class="mb-0">Submitted Bids</h5><p class="display-4" id="stats-pending-bids">--</p></div><i class="fas fa-hourglass-half stat-icon"></i></div></div>
-                        <div class="col-lg-3 col-md-6"><div class="stat-card bg-info" onclick="navigateTo('admin-awarded-view')"><div><h5 class="mb-0">Items Awarded</h5><p class="display-4" id="stats-awarded-contracts">--</p></div><i class="fas fa-trophy stat-icon"></i></div></div>
-                    </div>
-                    <div class="row g-4">
-                        <div class="col-md-7"><div class="card shadow-sm border-0"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">Pending Requisitions</h5><a href="#" class="small" onclick="navigateTo('admin-pending-reqs-view')">View All</a></div><div id="admin-dashboard-reqs" class="list-group list-group-flush" style="max-height: 350px; overflow-y: auto;"></div></div></div>
-                        <div class="col-md-5"><div class="card shadow-sm border-0"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">Recent Bids</h5><a href="#" class="small" onclick="navigateTo('admin-bidding-history-view')">View All</a></div><div id="admin-dashboard-bids" class="list-group list-group-flush" style="max-height: 350px; overflow-y: auto;"></div></div></div>
-                    </div>
+    <div class="row g-4 mb-4">
+        <div class="col-lg-3 col-md-6">
+            <div class="stat-card bg-primary" onclick="navigateTo('admin-requirements-view')">
+                <div>
+                    <h5 class="mb-0">Active Items</h5>
+                    <p class="display-4" id="stats-active-tenders"><span class="skeleton skeleton-text" style="width: 60px; height: 48px; display: inline-block;"></span></p>
                 </div>
+                <i class="fas fa-file-alt stat-icon"></i>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="stat-card bg-success" onclick="navigateTo('admin-pending-users-view')">
+                <div>
+                    <h5 class="mb-0">Pending Users</h5>
+                    <p class="display-4" id="stats-pending-users"><span class="skeleton skeleton-text" style="width: 60px; height: 48px; display: inline-block;"></span></p>
+                </div>
+                <i class="fas fa-user-check stat-icon"></i>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="stat-card bg-warning" onclick="navigateTo('admin-bidding-history-view')">
+                <div>
+                    <h5 class="mb-0">Submitted Bids</h5>
+                    <p class="display-4" id="stats-pending-bids"><span class="skeleton skeleton-text" style="width: 60px; height: 48px; display: inline-block;"></span></p>
+                </div>
+                <i class="fas fa-hourglass-half stat-icon"></i>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="stat-card bg-info" onclick="navigateTo('admin-awarded-view')">
+                <div>
+                    <h5 class="mb-0">Items Awarded</h5>
+                    <p class="display-4" id="stats-awarded-contracts"><span class="skeleton skeleton-text" style="width: 60px; height: 48px; display: inline-block;"></span></p>
+                </div>
+                <i class="fas fa-trophy stat-icon"></i>
+            </div>
+        </div>
+    </div>
+    <div class="row g-4">
+        <div class="col-md-7"><div class="card shadow-sm border-0"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">Pending Requisitions</h5><a href="#" class="small" onclick="navigateTo('admin-pending-reqs-view')">View All</a></div><div id="admin-dashboard-reqs" class="list-group list-group-flush" style="max-height: 350px; overflow-y: auto;"></div></div></div>
+        <div class="col-md-5"><div class="card shadow-sm border-0"><div class="card-header bg-white d-flex justify-content-between align-items-center"><h5 class="mb-0">Recent Bids</h5><a href="#" class="small" onclick="navigateTo('admin-bidding-history-view')">View All</a></div><div id="admin-dashboard-bids" class="list-group list-group-flush" style="max-height: 350px; overflow-y: auto;"></div></div></div>
+    </div>
+</div>
                 
                 </div>
         </main>
